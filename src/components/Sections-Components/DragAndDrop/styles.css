@@ -1,0 +1,77 @@
+.drag-and-drop-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.drag-and-drop-wrapper .droppable-area,
+.drag-and-drop-wrapper .draggable-area {
+    flex: 1;
+}
+
+.drag-and-drop-wrapper .droppable-area,
+.drag-and-drop-wrapper .draggable-area {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.drag-and-drop-wrapper .droppable-area .droppable-item {
+    border: .3rem dashed #ff9900;
+    overflow: hidden;
+    position: relative;
+}
+
+.drag-and-drop-wrapper .droppable-area .droppable-item::before {
+    content: 'Arraste o item do lado pra cá';
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1;
+    color: #ff9900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.drag-and-drop-wrapper .draggable-area .draggable-item,
+.drag-and-drop-wrapper .droppable-area .draggable-item {
+    background: #fff;
+    color: #ed3e81;
+    padding: .5rem;
+    line-height: 1;
+    cursor: grab;
+    user-select: none;
+}
+
+.drag-and-drop-wrapper .droppable-area .droppable-item,
+.drag-and-drop-wrapper .draggable-area .draggable-item {
+    border-radius: .5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drag-and-drop-wrapper .droppable-area .droppable-item .draggable-item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .drag-and-drop-wrapper {
+        flex-direction: column;
+        margin-top: 6rem;
+    }
+
+    .drag-and-drop-wrapper .droppable-area, .drag-and-drop-wrapper .draggable-area {
+        width: 100%;
+    }
+}

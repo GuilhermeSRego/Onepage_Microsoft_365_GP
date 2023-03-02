@@ -1,0 +1,71 @@
+.tooltip-wrapper .button-with-text {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.tooltip-wrapper .button-with-text button {
+    background-color: #6200E8;
+    position: relative;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    transition: .3s linear;
+}
+
+.tooltip-wrapper .button-with-text > button::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tooltip-wrapper .button-with-text > button:hover {
+    box-shadow: 3px 3px 5px -2px #000;
+}
+
+.tooltip-wrapper .button-with-text > button span {
+    color: #fff;
+    position: absolute;
+    font-size: 1.4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tooltip-wrapper .personal-tooltip {
+    background-color: #fff;
+    backdrop-filter: blur(20px);
+    color: #000;
+    width: 95%;
+    max-width: 25rem;
+    z-index: 999;
+    padding-bottom: 3rem;
+}
+
+.tooltip-wrapper .personal-tooltip h6 {
+    font-size: 1.5rem;
+    color: #660099;
+    margin-bottom: .5rem;
+}
+
+.tooltip-wrapper .personal-tooltip button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}

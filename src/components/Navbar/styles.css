@@ -1,0 +1,156 @@
+.navigation {
+    position: fixed;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+nav {
+    width: 100%;
+    background-color: #461E5D;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    position: relative;
+    top: 2rem;
+}
+
+button.burger-menu {
+    background: none;
+    height: 100%;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    row-gap: .4rem;
+    cursor: pointer;
+    border: none;
+}
+
+nav:hover .burger-bar {
+    background-color: #e79824;
+    box-shadow: 0px 0px 4px 1px #fff;
+}
+
+nav .burger-bar {
+    width: 100%;
+    height: .3rem;
+    background-color: #F44881;
+    border-radius: .5rem;
+    transition: .5s ease-out;
+}
+
+nav .burger-bar.clicked:nth-child(1) {
+    transform-origin: left;
+    transform: rotate(45deg) translate(0rem, -0.5rem);
+    transition: ease-out .5s;
+}
+nav .burger-bar.clicked:nth-child(2) {
+    transform: scale(.1);
+    transition: ease-out .5s;
+}
+nav .burger-bar.clicked:nth-child(3) {
+    transform-origin: left;
+    transform: rotate(-45deg) translate(0rem, 0.5rem);
+    transition: ease-out .5s;
+}
+
+nav .burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+nav .burger-bar.unclicked:nth-child(1) {
+    width: 100%;
+}
+nav .burger-bar.unclicked:nth-child(2) {
+    width: 75%;
+}
+nav .burger-bar.unclicked:nth-child(3) {
+    width: 40%;
+}
+
+.menu {
+    background-color: rgba(70,30,93,.5);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    padding: 2rem;
+    padding-top: 7rem;
+    width: 75vw;
+    max-width: 22rem;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    cursor: auto;
+}
+
+.menu.hidden { 
+    opacity: 0;
+    transform: translateX(100%);
+    transition: ease-out .5s;    
+}
+
+.menu.visible { 
+    opacity: 1;
+    transform: translateX(0);
+    transition: ease-out .5s;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    cursor: pointer;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+.menu ul li a {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-right: 2rem;
+    opacity: .8;
+    transition: .2s ease-out;
+}
+
+.menu ul li a::after {
+    content: '';
+    background-color: #F44881;
+    position: absolute;
+    border-radius: 1rem;
+    width: 0%;
+    height: .3rem;
+    bottom: -.5rem;
+    left: 0;
+    transition: .2s ease-out;
+    z-index: -1;
+}
+
+.menu ul li:hover a,
+.menu ul li a.active {
+    opacity: 1;
+}
+
+.menu ul li:hover a::after,
+.menu ul li a.active::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        max-width: 15rem;
+    }
+    .menu ul li {
+        margin-bottom: 1.5rem;
+    }
+    
+    .menu ul li a {
+        font-size: 1.3rem;
+        padding-right: 0;
+    }
+}

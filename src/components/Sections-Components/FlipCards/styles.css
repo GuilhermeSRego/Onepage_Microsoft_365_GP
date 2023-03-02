@@ -1,0 +1,131 @@
+.flipcards-wrapper > h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #FE9901;
+    margin-bottom: 1rem;
+}
+
+.flipcards-wrapper .flipcards-area {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+.flipcards-wrapper .flipcards-area .flipcard {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    max-width: 18rem;
+    height: 20rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px -5px #000;
+    perspective: 1000px;
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner .flipcard-front,
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner .flipcard-back {
+    position: absolute;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    cursor: pointer;
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner .flipcard-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner .flipcard-back {
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner h4 {
+    font-size: 1.5rem;
+    font-family: officina-bold;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 0.4rem;
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner h4.shadow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    color: transparent;
+    -webkit-text-stroke-width: .7px;
+    -webkit-text-stroke-color: white;
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner h4.shadow[position=top] {
+    transform: translate(-50%, -150%);  
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner h4.shadow[position=bottom] {
+    transform: translate(-50%, 50%);
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner p {
+    color: #fff;
+    font-size: 1.3rem;
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner img.img-flip {
+    position: absolute;
+    width: 2.3rem;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner img.icon {
+    position: absolute;
+    width: 8rem;
+    top: 1rem;
+}
+.flipcards-wrapper .flipcards-area .flipcard .flipcard-inner.active {
+    transform: rotateY(180deg);
+}
+.flipcards-wrapper .flipcards-area .flipcard[value="1-1"] .flipcard-front, .flipcards-wrapper .flipcards-area .flipcard[value="1-1"] .flipcard-back {
+background-color: #660099;
+}
+.flipcards-wrapper .flipcards-area .flipcard[value="1-2"] .flipcard-front, .flipcards-wrapper .flipcards-area .flipcard[value="1-2"] .flipcard-back, .flipcards-wrapper .flipcards-area .flipcard[value="2-2"] .flipcard-front, .flipcards-wrapper .flipcards-area .flipcard[value="2-2"] .flipcard-back {
+background-color: #eb3c7d;
+}
+.flipcards-wrapper .flipcards-area .flipcard[value="1-3"] .flipcard-front, .flipcards-wrapper .flipcards-area .flipcard[value="1-3"] .flipcard-back, .flipcards-wrapper .flipcards-area .flipcard[value="2-1"] .flipcard-front, .flipcards-wrapper .flipcards-area .flipcard[value="2-1"] .flipcard-back {
+background-color: #FF9C05;
+}
+.flipcards-wrapper .flipcards-area .flipcard[value="1-4"] .flipcard-front, .flipcards-wrapper .flipcards-area .flipcard[value="1-4"] .flipcard-back {
+background-color: #99cc3a;
+}
+.flipcards-wrapper .flipcards-area .flipcard[value="1-5"] .flipcard-front, .flipcards-wrapper .flipcards-area .flipcard[value="1-5"] .flipcard-back {
+background-color: #0066cc;
+}
+.flipcards-wrapper .flipcards-area .flipcard[value="1-6"] .flipcard-front, .flipcards-wrapper .flipcards-area .flipcard[value="1-6"] .flipcard-back {
+background-color: #41225c;
+}
+.flipcards-wrapper .flipcards-area .flipcard:focus {
+    outline: 0;
+}
+.flipcards-wrapper .flipcards-area[value="2"] .flipcard .flipcard-inner p {
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .flipcards-wrapper .flipcards-area {
+        padding: 0;
+    }
+}

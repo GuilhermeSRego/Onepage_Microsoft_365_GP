@@ -1,0 +1,124 @@
+.video {
+    margin: 5rem auto;
+    width: 100%;
+    max-width: 40rem;
+    position: relative;
+}
+
+.video img {
+    width: 100%;
+}
+
+.video .video-wrapper {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.video .video-wrapper video {
+    width: 100%;
+}
+
+.video .video-wrapper .controls,
+.video .video-wrapper .caption {
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: .5rem;
+}
+
+.video .video-wrapper .caption {
+    top: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+}
+
+.video .video-wrapper .caption h5 {
+    font-size: 1.4rem;
+}
+
+.video .video-wrapper .controls {
+    bottom: 0;
+    transform: translateY(100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video .video-wrapper .caption::after,
+.video .video-wrapper .controls::after {
+    content: '';
+    position: absolute;
+
+    width: 100%;
+    height: 200%;
+    left: 0;
+    z-index: -1;
+}
+
+.video .video-wrapper .caption::after {
+    background: linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(255,255,255,0) 100%);
+    top: 0;
+}
+
+.video .video-wrapper .controls::after {
+    background: linear-gradient(0deg, rgba(0,0,0,.8) 0%, rgba(255,255,255,0) 100%);
+    bottom: 0;
+}
+
+.video .video-wrapper:hover .controls,
+.video .video-wrapper:hover .caption {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.video .video-wrapper .controls .side {
+    display: flex;
+    gap: .5rem;
+}
+
+.video .video-wrapper .controls,
+.video .video-wrapper .controls button {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.video .video-wrapper .controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video .video-wrapper .controls button.play-pause {
+    cursor: pointer;
+}
+
+.video .video-wrapper .controls .volume-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.video .video-wrapper .controls .volume-wrapper input {
+    cursor: pointer;
+    width: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s linear;
+}
+
+.video .video-wrapper .controls .volume-wrapper:hover input {
+    width: 100%;
+    opacity: 1;
+    pointer-events: auto;
+}

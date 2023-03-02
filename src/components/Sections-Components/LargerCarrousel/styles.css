@@ -1,0 +1,156 @@
+.larger-carrousel {
+    background-size: 100% auto;
+    position: relative;
+    margin: 5rem auto;
+    width: 100%;
+}
+
+.larger-carrousel > img {
+    width: 2000px;
+    height: 120%;
+    position: absolute;
+    top: 50%;
+    left: 7rem;
+    transform: translate(0, -50%);
+}
+
+.larger-carrousel > img.bg-m {
+    display: none;
+}
+
+.larger-carrousel .item {
+    min-height: 14rem;
+    padding: 2rem;
+}
+
+.larger-carrousel .flex-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.larger-carrousel .flex-area > img {
+    width: 100%;
+    max-width: 20rem;
+}
+
+.larger-carrousel .flex-area > div h4 {
+    font-family: officina-bold;
+    color: #F44881;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.larger-carrousel .flex-area > div h4 + h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.larger-carrousel .flex-area > div h4 + h4 span {
+    margin-left: 2rem;
+}
+
+.larger-carrousel .flex-area > div p {
+    font-size: 1.2rem;
+}
+
+.larger-carrousel .flex-area > div ul {
+    list-style-position: inside;
+}
+
+.larger-carrousel .controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1rem;
+}
+
+.larger-carrousel .controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+ 
+.larger-carrousel .controls button.prev {
+    margin-left: .5rem;
+}
+
+.larger-carrousel .controls button img {
+    width: 2rem;
+}
+
+.larger-carrousel .slick-dots {
+    bottom: -3rem;
+    left: 0;
+}
+
+.larger-carrousel .slick-dots li {
+    margin: 0 1px;
+}
+
+.larger-carrousel .slick-dots li.slick-active button:before {
+    color: #461E5D;
+    opacity: 1;
+}
+
+.larger-carrousel .slick-dots li button:before {
+    font-size: 18px;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0px 0px 5px #F44881;
+}
+
+@media screen and (max-width: 768px) {
+    .larger-carrousel {
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+    
+    .larger-carrousel > img {
+        width: 100%;
+        height: 112%;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+    }
+
+    .larger-carrousel > img.bg {
+        display: none;
+    }
+
+    .larger-carrousel > img.bg-m {
+        display: block;
+    }
+
+    .larger-carrousel .flex-area {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .larger-carrousel .flex-area > img {
+        margin-top: -2rem;
+    }
+
+    .larger-carrousel .controls {
+        bottom: -3rem;
+        justify-content: space-between;
+    }
+
+    .larger-carrousel .controls button.prev {
+        margin-left: 0;
+    }
+
+    .larger-carrousel .controls button img {
+        width: 3rem;
+    }
+
+    .larger-carrousel .slick-dots {
+        bottom: -2rem;
+    }
+}

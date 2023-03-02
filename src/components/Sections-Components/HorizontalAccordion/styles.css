@@ -1,0 +1,120 @@
+.horizontal-accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-accordion .accordion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.horizontal-accordion .accordion[orientation="right"] {
+    flex-direction: row-reverse;
+}
+
+.horizontal-accordion .accordion img {
+    width: 7rem;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.horizontal-accordion .accordion .content-wrapper {
+    width: calc(100% - 90px);
+    /* width: 100%; */
+    max-width: 46rem;
+    position: relative;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: ease-out .5s;
+    opacity: 0;
+}
+
+.horizontal-accordion .accordion.show .content-wrapper {
+    transition: ease-out .5s;
+    transform: scale(1, 1);
+    position: relative;
+    opacity: 1;
+}
+
+.horizontal-accordion .accordion .content {
+    color: #7d05a4;
+    padding: 1rem 3rem;
+    width: 100%;
+    user-select: none;
+}
+
+.horizontal-accordion .accordion[orientation="right"] .content-wrapper {
+    transform-origin: right top;
+}
+
+
+.horizontal-accordion .accordion[orientation="left"] .content-wrapper {
+    margin-left: -2rem;
+}
+
+.horizontal-accordion .accordion[orientation="left"] .content {
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%);
+}
+
+.horizontal-accordion .accordion[orientation="left"] .content .inner {
+    margin-left: 5rem;
+}
+
+.horizontal-accordion .accordion[orientation="right"] .content-wrapper {
+    margin-right: -2rem;
+}
+
+.horizontal-accordion .accordion[orientation="right"] .content .inner {
+    margin-right: 5rem;
+}
+
+.horizontal-accordion .accordion[orientation="right"] .content {
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%);
+}
+
+.horizontal-accordion .accordion[orientation="left"] .content-wrapper .outer,
+.horizontal-accordion .accordion[orientation="right"] .content-wrapper .outer {
+    background-color: blue;
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    top: .6rem;
+    z-index: -1;
+}
+
+.horizontal-accordion .accordion[orientation="left"] .content-wrapper .outer {
+    right: -.6rem;
+}
+
+.horizontal-accordion .accordion[orientation="right"] .content-wrapper .outer {
+    left: -.6rem;
+}
+
+
+.horizontal-accordion .accordion .content h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.horizontal-accordion .accordion .content p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .horizontal-accordion .accordion .content {
+        padding: .2rem;
+    }
+
+    .horizontal-accordion .accordion[orientation="left"] .content .inner {
+        margin-left: 3rem;
+    }
+
+    .horizontal-accordion .accordion[orientation="right"] .content .inner {
+        margin-right: 3rem;
+    }
+}

@@ -1,0 +1,56 @@
+.saiba-mais {
+    width: 100%;
+   
+    
+
+    margin-top: 2rem;
+    
+}
+
+.title{
+    text-align: center;
+}
+
+.mobile{
+    width: 50%;
+    margin-left: 0rem !important;
+    
+}
+
+
+.saiba-mais p {
+    position: relative;
+    margin-top: 1rem;
+    font-size: 1.8rem !important;
+    color: #f5f1f7;
+    width: 50rem;
+    margin-left: 0rem !important;
+    text-align: left;
+}
+
+.divgif{
+    text-align: center;
+}
+
+.gif{
+    width: 20%;
+    position: relative;
+    margin-top: 8rem;
+   
+}
+
+@media screen and (max-width: 792px) {
+    .saiba-mais p {
+        position: relative;
+        margin-top: 1rem;
+        font-size: 1rem !important;
+        color: #f5f1f7;
+        width: 40rem;
+        margin-left: 0rem !important;
+        text-align: center;
+    }
+  
+}
+
+
+

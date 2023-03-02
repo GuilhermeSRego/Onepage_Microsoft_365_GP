@@ -1,0 +1,32 @@
+img.retranca {
+    position: absolute;
+    width: 15rem;
+    left: 0;
+    top: 2rem;
+    z-index: 10;
+}
+
+.sign-area {
+    width: 100%;
+    display: flex;
+}
+
+.sign-area img {
+    width: 100%;
+  
+    margin: 0 auto;
+}
+
+section.wp-capa {
+    background-position: 12% !important;
+}
+
+section.wp-asian {
+    background-position: 5% bottom !important;
+}
+
+@media screen and (max-width: 768px) {
+    section.wp-sm {
+        background-position: 80% center;
+    }
+}

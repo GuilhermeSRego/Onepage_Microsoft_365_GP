@@ -1,0 +1,245 @@
+.circular-carrousel {
+    --slider-size: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.circular-carrousel .content {
+    position: relative;
+    margin: -17rem 0;
+    margin-left: calc(var(--slider-size) / 1.35 * -1);
+}
+
+.circular-carrousel .content .wrapper {
+    background-image: url("../../../assets/images/carrousel/circularCarrousel/circle.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: var(--slider-size);
+    height: var(--slider-size);
+    margin: 12rem 0;
+    z-index: 1;
+    margin-left: -6vw;
+}
+
+.circular-carrousel .content .wrapper .item {
+    --transition-time: .5s;
+    --size: 12rem;
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    background: #ffff;
+    border: .5rem solid #CD3F71;
+    padding: 1rem;
+    transition: background var(--transition-time) linear, border var(--transition-time) linear;
+}
+
+.circular-carrousel .content .wrapper .item svg {
+    width: 7rem;
+}
+
+.circular-carrousel .content .wrapper .item svg path {
+    fill: #370054;
+}
+
+.circular-carrousel .content .wrapper .item.active {
+    background: #fff;
+    border-color: #eb3c7d;
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+.circular-carrousel .content .wrapper .item.active svg path {
+    fill: #eb3c7d;
+}
+
+.circular-carrousel .content .wrapper svg {
+    height: 90%;
+    width: 90%;
+    overflow: visible;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s linear;
+}
+
+.circular-carrousel .content .wrapper svg .st0 {
+    fill: none;
+    stroke-width: 2;
+    stroke-miterlimit: 1;
+}
+
+.circular-carrousel .text-area {
+    background-color: transparent;
+    color: #000000;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    margin-left: 11rem;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.circular-wrapper h4 {
+    font-size: 2.5rem;
+    color: #FF9C05;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.circular-carrousel .text-area h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #370054;
+}
+
+.circular-carrousel .text-area .controls {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.circular-carrousel .text-area .controls p {
+    font-size: 1.5rem;
+    color: #eb3c7d !important;
+    font-weight: bolder;
+}
+
+.circular-carrousel .text-area .controls p span {
+    color: #370054;
+}
+
+.circular-carrousel .text-area .controls button span.mobile {
+    display: none;
+}
+
+.circular-carrousel .text-area .controls button span img {
+    color: #370054;
+    width: 55%;
+}
+
+.circular-carrousel .text-area .controls button span img.mobile {
+    display: none;
+    width: 55%;
+}
+
+.circular-carrousel .text-area .controls button span{
+    display: block;
+}
+
+.circular-carrousel .text-area .text-item {
+    width: 61%;
+    padding-right: 4rem;
+    text-align: left;
+}
+
+.circular-carrousel .text-area .text-item p:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.circular-carrousel .text-area button {
+    font-size: 3rem;
+    transform: scale(0.8);
+    color: #FF9C05;
+    font-weight: 900;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s linear;
+}
+
+.circular-carrousel .text-area button:hover {
+    transform: scale(1);
+}
+
+.div-texto66{
+    margin-top: 3rem;
+    width: 50rem;
+    text-align: center;
+
+}
+
+.text2{
+    font-size: 1.8rem !important;
+    margin-left: 10rem !important;
+}
+
+
+
+@media screen and (max-width: 792px) {
+    .circular-carrousel {
+        gap: 2rem;
+    }
+
+    .circular-carrousel .content {
+        margin-left: calc(var(--slider-size) / 1.2 * -1);
+        z-index: 5;
+    }
+
+    .circular-carrousel .content .wrapper {
+        margin: 15rem 0;
+        margin-bottom: 12rem;
+    }
+
+    .circular-carrousel .text-area {
+        margin-left: 0;
+        padding: 0 .5rem;
+    }
+
+    .circular-carrousel .text-area .text-item {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .circular-carrousel .text-area .controls {
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+        top: auto;
+        bottom: -4rem;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .circular-carrousel .text-area .controls button span.mobile {
+        display: block;
+    }
+
+    .circular-carrousel .text-area .controls button span img {
+        color: #370054;
+        width: 55%;
+        transform: rotate(-90deg);
+    }
+
+    .circular-carrousel .text-area .controls button span.web {
+        display: none;
+    }
+
+    .div-texto66{
+        margin-top: 3rem;
+        width:20rem;
+        text-align: center;
+    
+    }
+    
+    .text2{
+        font-size: 1.4rem !important;
+        margin-left: 0rem !important;
+        margin-right: 2rem;
+    }
+}

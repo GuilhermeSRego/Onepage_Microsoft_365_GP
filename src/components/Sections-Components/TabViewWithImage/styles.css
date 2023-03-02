@@ -1,0 +1,173 @@
+.tab-view-with-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3rem;
+   
+    z-index: 1;
+}
+
+
+.div_tit{
+    text-align: center;
+    display: block;
+    align-content: center;
+    align-items: center;
+}
+
+.titulo{
+    width: 60%;
+    align-self: center;
+    
+}
+
+.apps{
+   
+    width: 40%;
+    
+}
+
+.notify{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.tab-view-with-image .tab-icons {
+    
+    
+   
+    width: 11rem;
+    
+}
+
+.tab-view-with-image .tab-icons .icon {
+    
+    padding: 0.6rem;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    width: 42rem;
+    margin-left: -5rem;
+    
+   
+}
+
+.tab-view-with-image .tab-icons .icon:hover {
+   
+    background-color:#461E5D ;
+}
+
+
+
+
+
+.tab-view-with-image .tab-icons .icon::after,
+.tab-view-with-image .content::after {
+    content: '';
+   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: .3rem;
+    left: -.3rem;
+    z-index: -1;
+}
+
+.seletor{
+    width: 100%;
+}
+
+
+
+
+
+.tab-view-with-image .content {
+    position: relative;
+    background-color: #461E5D;
+    color:#eeeeee;
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    transition: all ease-out .5s;
+    margin-left: 23rem;
+   margin-right: -5rem;
+    height: 25rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+
+.tab-view-with-image .content .text-area {
+    flex: 1;
+}
+
+.tab-view-with-image .content .text-area p {
+    font-size: 1.4rem;
+}
+
+.tab-view-with-image .content .text-area p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 792px) {
+    .tab-view-with-image {
+        flex-direction: column;
+        row-gap: 1.5rem;
+        
+       
+    }
+
+    .tab-view-with-image .tab-icons {
+        width: 100%;
+        justify-content: center;
+        display: block;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        
+    }
+
+    .tab-view-with-image .tab-icons .icon {
+    
+        padding: 0.6rem;
+        
+        cursor: pointer;
+        position: relative;
+        width: 45rem;
+        display: block;
+        margin-left: 0rem;
+       
+        
+       
+    }
+
+
+    
+   
+
+    .tab-view-with-image .content {
+        flex-direction: column;
+        row-gap: 1rem;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+        display: block;
+        position: relative;
+        margin-left: 0rem;
+        margin-right: 0rem;
+
+    }
+
+    .tab-view-with-image .content .text-area p {
+        font-size: 1rem;
+    }
+
+}
+

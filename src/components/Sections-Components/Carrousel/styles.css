@@ -1,0 +1,39 @@
+.carrousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.texto{
+    width: 100%;
+    padding-top: 3rem;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem;
+    
+
+}   
+.table {
+    margin-top: 0rem !important;
+    width: 100%;
+    padding-bottom: 15rem;
+    border: 30px;
+    border-color: white;
+}
+
+
+@media screen and (max-width: 793px) {
+    .carrousel {
+        width: 100%;
+       
+    }
+
+    .texto{
+        width: 100%;
+        padding-top: 3rem;
+        margin-bottom: 0rem !important;
+        margin-left: 0rem;
+        
+    
+    }   
+
+    
+}
