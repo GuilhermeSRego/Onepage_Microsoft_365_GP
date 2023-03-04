@@ -1,0 +1,43 @@
+.clicktip-wrapper {
+    border: 1px solid white;
+    padding: .5rem;
+    min-height: 3rem;
+    max-width: 20rem;
+    color: #660099;
+    position: relative;
+    display: flex;
+    align-items: center;
+        
+}
+
+.clicktip-wrapper span {
+    display: block;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.clicktip-wrapper.center {
+    margin: 0 auto;
+}
+
+.clicktip-wrapper::after {
+    --size: 3rem;
+
+    content: '';
+    background-image: url('../../../assets/images/clickTip/hand.png');
+    background-size: 100% 100%;
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.clicktip-wrapper.white {
+    color: #fff;
+}
+
+.clicktip-wrapper.white::after {
+    background-image: url('../../../assets/images/clickTip/white-hand.png');
+}
