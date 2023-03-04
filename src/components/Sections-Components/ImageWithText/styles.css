@@ -1,5 +1,5 @@
 .image-with-text {
-    display: block;
+    display: flex;
     align-items: center;
     width: 100%;
     margin: 0 auto;
@@ -40,8 +40,31 @@
 .text-area5{
     margin-top: 2rem;
     margin-left: 2rem;
+    display: inline-block !important;
+    flex-direction: row;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
     
     
+
+
+.mulher5{
+    display: inline-block !important;
+    height: 30%;
+    width: 30%;
+    
+    text-align: right;
+   
+}
+
+
+.imagem-mulher{
+    width: 90%;
+   
+    filter: drop-shadow(20px 10px 20px #BD4AFF)
+
+
 }
 
 
@@ -58,11 +81,13 @@
     font-weight: bold;
     width: 40rem;
     font-size: 1.4rem;
+   
+    
 
 }
 
 
-@media screen and (max-width: 792px) {
+@media screen and (max-width: 800px) {
     .image-with-text,
     .image-with-text.reverse {
         flex-direction: column;
@@ -81,6 +106,7 @@
         font-weight: bold;
         width: 15rem;
         font-size: 1rem;
+        display: block !important;
     }
    
     .lista677{
@@ -102,6 +128,24 @@
         margin-left: 0rem;
         margin-bottom: 1rem;
         width: 25rem;
+    }
+
+    .mulher5{
+        display: block !important;
+        height: 30%;
+        width: 30%;
+        flex-direction: row;
+        
+    
+    }
+    
+    
+    .imagem-mulher{
+        width: 90%;
+        flex-direction:column;
+        filter: drop-shadow(20px 10px 20px #BD4AFF)
+    
+    
     }
     
 }

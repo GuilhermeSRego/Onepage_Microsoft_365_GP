@@ -3,6 +3,8 @@ import './styles.css';
 
 import titulo from "../../../assets/images/titulovant.png"
 import microsoft from "../../../assets/images/microsoft.png"
+import mulher2 from "../../../assets/images/mulher2.jpg"
+
 
 const ImageWithText = () => {
     return (
@@ -23,6 +25,9 @@ const ImageWithText = () => {
                 <li className="lista677">Autonomia para usuários definirem quem ou quais grupos têm acesso a arquivos e pastas;</li>
                 <li className="lista677">A Vivo oferece LSP e CSP, diferentemente de outros fornecedores.</li>
             </ul>
+            </div>
+            <div className="mulher5">
+                <img className="imagem-mulher" src={mulher2}></img>
             </div>
         </div>
     )

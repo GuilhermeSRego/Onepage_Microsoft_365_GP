@@ -59,10 +59,10 @@ const Home = () => {
                     <Carrousel />
                 </Container>
             </Section>
-            <Section bg={mulher}  id="carrousel" >
-                
+            <Section   id="carrousel" >
+                <Container>
                   <ImageWithText />  
-                
+                </Container>  
             </Section>
             
             
