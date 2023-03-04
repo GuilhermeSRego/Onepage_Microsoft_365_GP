@@ -9,7 +9,7 @@ const ImageWithText = () => {
         <div className="text">
             <div className="div_imagem">
             <div className="title2"> 
-                <h2 className="titulotexto2">Proposta comercial Vivo</h2>
+                <h2 className="titulotexto2">Principais vantagens e benefícios de comprar com a Vivo</h2>
             </div>
             <img className="microsoft" src={microsoft} alt="" />
             </div>

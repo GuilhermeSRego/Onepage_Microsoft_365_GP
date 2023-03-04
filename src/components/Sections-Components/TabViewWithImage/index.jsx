@@ -14,8 +14,8 @@ import Icon5 from '../../../assets/images/teamsessencials.png';
 const data = [
     {
         icon: Icon1,
+        title:['BUSINESS BASIC'],
         description: [
-            'BUSINESS BASIC',
             'Número de usuários: até 300',
             'Capacidade de armazenamento no e-mail: 50 GB',
             'Capacidade de armazenamento na nuvem: 1 TB',
@@ -28,8 +28,8 @@ const data = [
     },
     {
         icon: Icon2,
+        title:['APLICATIVOS PARA NEGÓCIOS'],
         description: [
-            'APLICATIVOS PARA NEGÓCIOS',
             'Usuários: Até 300',
             'Espaço de Correio: —',
             'Utilização: Online e Desktop',
@@ -43,8 +43,8 @@ const data = [
     },
     {
         icon: Icon3,
+        title:['MICROSOFT 365 BUSINESS STANDARD'],
         description: [
-            'MICROSOFT 365 BUSINESS STANDARD',
             'Número de usuários: até 300',
             'Capacidade de armazenamento no e-mail: 50 GB',
             'Capacidade de armazenamento na nuvem: 1 TB',
@@ -54,8 +54,8 @@ const data = [
     },
     {
         icon: Icon4,
+        title:['EXCHANGE'],
         description: [
-            'EXCHANGE',
             'Plano: Online Kiosk   Espaçode Correio: 2GB',
             'Plano: Online Plano 1 Espaçode Correio: 50GB',
             'Plano: Online Plano 2 Espaçode Correio: 100GB',
@@ -64,8 +64,8 @@ const data = [
     },
     {
         icon: Icon5,
+        title:['TEAMS ESSENCIALS'],
         description: [
-            'TEAMS ESSENCIALS',
             'Chat ilimitado',
             'Reuniões on-line e videoconferências para até 300 usuários',
             '10 GB para armazenamento de arquivos e documentos',
@@ -94,6 +94,11 @@ const TabViewWithImage = () => {
                 )) }
             </div>
             <div className="content">
+                <div className="title333">
+                { data[indexItem].title.map((item, index) => (
+                        <p key={index}>{item}</p>
+                    ))  }
+                </div>
                 <div className="text-area">
                     { data[indexItem].description.map((item, index) => (
                         <p key={index}>{item}</p>

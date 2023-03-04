@@ -185,7 +185,7 @@ const CircularCarrousel = () => {
     return (
         <div className='circular-wrapper'>
             <div className="title"> 
-                <h2 className="titulotexto">Proposta comercial Vivo</h2>
+                <h2 className="titulotexto">Argumentos de venda</h2>
             </div>
             <div className='div-texto66'><p className='text2'>Observe, a seguir, alguns argumentos que você pode 
 usar durante a sua venda.

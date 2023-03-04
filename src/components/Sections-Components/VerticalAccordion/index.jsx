@@ -17,7 +17,7 @@ const VerticalAccordion = () => {
     return (
         <div className="vertical-accordion">
             <div className="title"> 
-                <h2 className="titulotexto">Proposta comercial Vivo</h2>
+                <h2 className="titulotexto">Pacotes Vivo para Microsoft 365</h2>
             </div>
             <div className="div_tit" >
             <img className="apps" src={apps} alt="Microsoft apps"></img>

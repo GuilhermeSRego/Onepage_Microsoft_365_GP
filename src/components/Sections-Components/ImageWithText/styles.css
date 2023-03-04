@@ -16,6 +16,8 @@
     text-align: start;
     margin-left: 2rem;
     margin-bottom: 1rem;
+    width: 45rem;
+    text-align: center;
 }
 
 .titulotexto2{
@@ -100,7 +102,7 @@
         text-align: start;
         margin-left: 0rem;
         margin-bottom: 1rem;
-        width: 15rem;
+        width: 25rem;
     }
     
 }

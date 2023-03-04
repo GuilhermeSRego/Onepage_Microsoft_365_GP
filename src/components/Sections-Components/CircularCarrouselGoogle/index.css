@@ -169,7 +169,7 @@
 }
 
 .div-texto66{
-    margin-top: 3rem;
+    margin-top: 0rem;
     width: 50rem;
     text-align: center;
 
@@ -199,7 +199,7 @@
 
     .circular-carrousel .text-area {
         margin-left: 0;
-        padding: 0 .5rem;
+        padding: 0rem;
     }
 
     .circular-carrousel .text-area .text-item {
@@ -216,6 +216,7 @@
         right: auto;
         left: 50%;
         transform: translateX(-50%);
+        margin-left: 7rem;
     }
 
     .circular-carrousel .text-area .controls button span.mobile {
@@ -227,21 +228,16 @@
         width: 55%;
         transform: rotate(-90deg);
     }
-
-    .circular-carrousel .text-area .controls button span.web {
-        display: none;
+    .text2{
+        font-size: 1.8rem !important;
+        margin-left: 10rem !important;
+        
     }
-
     .div-texto66{
         margin-top: 3rem;
-        width:20rem;
+        width: 40rem;
         text-align: center;
     
     }
-    
-    .text2{
-        font-size: 1.4rem !important;
-        margin-left: 0rem !important;
-        margin-right: 2rem;
-    }
+   
 }

@@ -14,8 +14,9 @@
 .table {
     margin-top: 0rem !important;
     width: 100%;
-    
+    background-color: white;
     border: 30px;
+    padding: 1.5rem;
     border-color: white;
     box-shadow: 10px 10px 16px #BD4AFF;
     margin-bottom: 15rem;
