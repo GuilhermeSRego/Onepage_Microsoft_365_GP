@@ -15,36 +15,37 @@ import titulovendas from '../../../assets/images/titulovenda.png';
 
 
 
-import { ReactComponent as Icon1 } from '../../../assets/images/google/workspace/CircularCarrousel/img-1-Cloud.svg';
+
 import { ReactComponent as Icon2 } from '../../../assets/images/google/workspace/CircularCarrousel/img-2-infinity.svg';
 import { ReactComponent as Icon3 } from '../../../assets/images/google/workspace/CircularCarrousel/img-3-porquinho.svg';
-import { ReactComponent as Icon4 } from '../../../assets/images/google/workspace/CircularCarrousel/img-4-world.svg';
+import { ReactComponent as Icon4 } from '../../../assets/images/google/workspace/CircularCarrousel/img-3.svg';
 import { ReactComponent as Icon5 } from '../../../assets/images/google/workspace/CircularCarrousel/img-1-Cloud.svg';
+import { ReactComponent as Icon6 } from '../../../assets/images/google/workspace/CircularCarrousel/img-2-infinity.svg';
 
 const data = [
     {
         title: "Custos de TI reduzidos",
         text: ["Consolidar aplicativos garante maior eficiência de custos. Geralmente, há taxas que estão associadas aos aplicativos na nuvem e a maioria dos aplicativos de negócios cobra uma taxa mensal a partir do número de usuários ou quantidade de armazenamento usado, o que aumenta com o uso de mais aplicativos. Além disso, gerenciar várias assinaturas pode ser incômodo. Consolidar o faturamento garante uma visão melhor sobre o que sua empresa está usando e o valor que está obtendo com seus aplicativos na nuvem.",],
-        image: <Icon1 />
+        image: <Icon3 />
     },
     {
         title: "Faça mais",
         text: ['Utilizar muitos aplicativos reduz a produtividade. Alternar entre o uso de diferentes aplicativos desperdiça tempo e frustra funcionários. A consolidação pode agilizar o trabalho:',
-    'Um único aplicativo para chats, chamadas e reuniões para que os funcionários alternem os modos de comunicação mais rápido;',
-    'Junção de aplicativos para trabalhar em um projeto, que permite colaboração em um documento, revisão e comunicação entre colaboradores permitida pela Microsoft Teams;',
-    'Informações armazenadas em uma única plataforma, sem necessidade de procurar em outras plataformas.'
+    'º Um único aplicativo para chats, chamadas e reuniões para que os funcionários alternem os modos de comunicação mais rápido;',
+    'º Junção de aplicativos para trabalhar em um projeto, que permite colaboração em um documento, revisão e comunicação entre colaboradores permitida pela Microsoft Teams;',
+    'º Informações armazenadas em uma única plataforma, sem necessidade de procurar em outras plataformas.'
     ],
         image: <Icon2 />
     },
     {
         title: "Simplifique a tecnologia",
         text: ['Os aplicativos na nuvem são mais simples de configurar do que as soluções locais, o que não significa que estejam livres de complicações, necessitando de suporte de TI para manutenção. Quando se tem aplicativos para oferecer suporte, há a liberação da equipe de TI, sendo investido mais tempo em iniciativas mais importantes que impulsionarão os negócios das empresas.'],
-        image: <Icon3 />
+        image: <Icon4 />
     },
     {
         title: "Acesse os melhores insights",
         text: ['Consolidar aplicativos em uma única solução ou em um conjunto de ferramentas de business intelligence bem integradas garante mais facilidade para as pessoas analisarem dados em toda a empresa e descobrirem os principais insights que ajudam a tomar decisões mais inteligentes.'],
-        image: <Icon4 />
+        image: <Icon6 />
     },
     {
         title: "Segurança reforçada",
@@ -183,8 +184,8 @@ const CircularCarrousel = () => {
 
     return (
         <div className='circular-wrapper'>
-            <div className='div-vendas'>
-                <img src={titulovendas} alt="" className='vendas'></img>
+            <div className="title"> 
+                <h2 className="titulotexto">Proposta comercial Vivo</h2>
             </div>
             <div className='div-texto66'><p className='text2'>Observe, a seguir, alguns argumentos que você pode 
 usar durante a sua venda.
@@ -210,7 +211,7 @@ usar durante a sua venda.
                 </div>
                 <div className='text-area'>
                     <div className='text-item'>
-                        <h3>{ data[itemActive].title }: </h3>
+                        <h3>{ data[itemActive].title }. </h3>
                         <p>
                         { data[itemActive].text.map((item, index) => (
                         <p key={index}>{item}</p>

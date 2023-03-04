@@ -13,7 +13,7 @@ const SaibaMais = () => {
     return (
         <div className="saiba-mais">
             <div className="title"> 
-                <img className="mobile" src={titled} alt="Titulo"></img>
+                <h2 className="titulotexto">Proposta comercial Vivo</h2>
             </div>
           
             <p>

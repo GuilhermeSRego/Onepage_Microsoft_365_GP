@@ -80,7 +80,7 @@
 
 .circular-carrousel .text-area {
     background-color: transparent;
-    backdrop-filter: blur(10px);
+   
     color: white;
     flex: 1;
     display: flex;

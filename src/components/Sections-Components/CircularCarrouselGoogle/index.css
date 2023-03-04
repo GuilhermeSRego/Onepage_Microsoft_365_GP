@@ -78,7 +78,7 @@
 }
 
 .circular-carrousel .text-area {
-    background-color: transparent;
+    background-color: transparent !important;
     color: #000000;
     flex: 1;
     display: flex;
@@ -87,6 +87,7 @@
     margin-left: 11rem;
     padding: 0 2rem;
     position: relative;
+
 }
 
 .circular-wrapper h4 {
@@ -102,6 +103,7 @@
     font-weight: 500;
     margin-bottom: 1rem;
     color: #370054;
+    background-color: transparent !important;
 }
 
 .circular-carrousel .text-area .controls {

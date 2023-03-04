@@ -16,9 +16,8 @@ const VerticalAccordion = () => {
 
     return (
         <div className="vertical-accordion">
-            <div className="div_tit" >
-            <img className="titulo" src={titled} alt="titulo"></img>
-            
+            <div className="title"> 
+                <h2 className="titulotexto">Proposta comercial Vivo</h2>
             </div>
             <div className="div_tit" >
             <img className="apps" src={apps} alt="Microsoft apps"></img>
@@ -30,10 +29,7 @@ const VerticalAccordion = () => {
                 Portanto, você, Gerente de Negócios, deve criar oportunidades para entender as necessidades do cliente e direcionar a solução mais adequada.
             </p>
 
-            <div className="div_tit" >
-            <img className="notify" src={notify} alt="Notificação"></img>
-            </div>
-            
+           
             
         </div>
     )

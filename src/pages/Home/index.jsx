@@ -6,11 +6,13 @@ import Section from '../../components/Section';
 import Carrousel from '../../components/Sections-Components/Carrousel';
 import Container from '../../components/Container';
 import Circulargoogle from '../../components/Sections-Components/CircularCarrouselGoogle';
+import CircularCarrousel from '../../components/Sections-Components/CircularCarrousel';
+
 
 import Logo from '../../components/Sections-Components/Logo';
-import CircularCarrousel from '../../components/Sections-Components/CircularCarrousel';
-import SaibaMais from '../../components/Sections-Components/SaibaMais';
 
+import SaibaMais from '../../components/Sections-Components/SaibaMais';
+import ClickTip from '../../components/Sections-Components/ClickTip';
 import VerticalAccordion from '../../components/Sections-Components/VerticalAccordion';
 import TabViewWithImage from '../../components/Sections-Components/TabViewWithImage';
 import ImageWithText from   '../../components/Sections-Components/ImageWithText';
@@ -52,6 +54,7 @@ const Home = () => {
             <Section bg={bgAsian3}  bgOrientation='center top' id="accordion" customClass='wp-asian' >
                 <Container>
                     <VerticalAccordion />
+                    <ClickTip text='Clique nos planos para conhecer mais detalhes.' center whiteTheme />
                     <TabViewWithImage />
                     <Carrousel />
                 </Container>
